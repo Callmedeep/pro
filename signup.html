@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signing up</title>
+	<style>
+		body{
+			background-color: rgba(127,241,157,0.81);
+		}
+		form{
+			width: 900px;
+			margin: auto;
+			font-size: 2em;
+		}
+		#head{
+			background: url("bg4.png");
+			background-repeat: no-repeat;
+			background-position: top-center;
+			font-family: cursive;
+			font-size: 8em;
+			color: rgba(49,1,59,0.65);
+		}
+		#regi
+		{
+			font-family: fantasy;
+
+		}
+		.color{
+			text-decoration-color: red;
+		}
+		input, select{
+			width: 200px;
+			display: block;
+			border: 1px solid #999;
+			height: 25px;
+			-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+			-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+			box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		}
+		#check{
+			background-color: initial;
+			height: 25px;
+   			margin: 3px 0.5ex;
+    		padding: initial;
+    		border: initial;
+		}
+	</style>
+</head>
+<body>
+<center>
+<a href="project2.html">Back to home</a>
+<h1 id="head">ONLINE TUT's</h1>
+<h1 id="regi">REGISTRATION</h1>
+<form onsubmit="mySubmit()" onreset="myReset()">
+<table class="color">
+	
+	<tr>
+		<td>Name:*</td>
+		<td><input type="text" name="fname" placeholder="First Name" required></td>
+		<td><input type="text" name="mname" placeholder="Middle Name"></td>
+		<td><input type="text" name="lname" placeholder="Last Name" required></td>
+	</tr>
+	<tr>
+	<td>Username:*</td>
+	<td><input type="text" name="username" placeholder="Username" required></td>
+	</tr>
+	<tr>
+		<td>Select Country:</td>
+		<td>
+			<select>
+				<option> </option>
+				<option>INDIA</option>
+				<option>NETHERLAND</option>
+				<option>RUSSIA</option>
+				<option>JAPAN</option>
+				<option>USA</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Email:*</td>
+		<td><input type="email" name="email" placeholder="Enter your Email." required></td>
+	</tr>
+	<tr>
+		<td>Password:*</td>
+		<td><input type="password" name="password" placeholder="Password" required></td>
+	</tr>
+	<tr>
+		<td>Re-type Password:*</td>
+		<td><input type="password" name="password1" placeholder="Password" required></td>
+	</tr>
+	</table>
+	<input id="check" position="bottom" type="checkbox" name="checkbox" required> I Agree with the terms and conditions<br><br>
+	<input name="submit" type="submit" value="SUBMIT" align="right">
+	<input type="reset" value="RESET">
+	</p>
+</form>
+</center>
+<hr>
+<script>
+		function mySubmit()
+		{
+			alert("The Form is Submitted.");
+		}
+		function myReset()
+		{
+			alert("The Form is reset.");
+		}
+	</script>
+</body>
+</html>
